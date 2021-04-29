@@ -1,9 +1,7 @@
+/* 
+    Importamos el esquema de colores de la página web 
+ */
 @import "colores.css";
-
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
 
 .menu-header {
     margin: auto;
@@ -16,45 +14,63 @@ ol {
     list-style: none;
 }
 
+/* 
+    Selector para el menú. 
+ */
 .nav {
-    /* width: 100%; */
     width: -webkit-fit-content;
     width: -moz-fit-content;
+    /* Establecemos el ancho ajustado al contenido */
     width: fit-content;
-    /*Le establecemos un ancho*/
+    /* Centramos automaticamente */
     margin: auto;
-    /*Centramos automaticamente*/
-    z-index: 5;
 }
 
 .nav>li {
     float: left;
-    /* padding: .5em; */
     padding: 5px;
 }
 
+/* 
+    Selector para los elementos dentro del menú.
+ */
 .nav li a {
     color: var(--dark-bg-color);
     background: var(--text-primary-color);
     font-weight: bold;
     text-decoration: none;
-    /* padding-top: 8px;
-    padding-bottom: 8px; */
     padding: 8px;
     display: block;
+    /* Efectos de borde y sombreado */
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px var(--accent-bg-color);
 }
 
+/* 
+    Selector para los elementos del menú, cuando el 
+    ratón pasa por encima de ellos. Utilizado para 
+    invertir el esquema de colores de los botones.
+ */
 .nav li a:hover {
     color: var(--text-primary-color);
     background: var(--dark-bg-color);
 }
 
+/* 
+    Selector para los sub-menus.
+ */
 .nav li ul {
     display: none;
     position: absolute;
     min-width: 140px;
 }
 
+/* 
+    Selector para los sub-menus, cuando
+    el ratón pasa por encima de ellos.
+    La propiedad z-index asegura que se muestra por encima
+    de imágenes y otros elementos de la página web.
+ */
 .nav li:hover>ul {
     display: block;
     z-index: 2;
@@ -64,10 +80,14 @@ ol {
     position: relative;
 }
 
+/* 
+    Selector para los elementos dentro de los sub-menus.
+    La propiedad z-index asegura que se muestran por encima
+    de imágenes y otros elementos de la página web.
+ */
 .nav li ul li ul {
     right: -140px;
     top: 0px;
-
     position: absolute;
     z-index: 2;
 }
