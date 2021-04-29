@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+@charset "UTF-8";
+
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+	--dark-bg-color: #008080;
+	--default-bg-color: #04a090;
+	--light-bg-color: #f7f8f8;
+	--text-primary-color: #f7f8f8;
+	--accent-bg-color: #9E9E9E;
+	--primary-text-color: #212121;
+	--secondary-text-color: #686868;
+	--divider-color: #BDBDBD;
+}
+
+.dark-primary-color    { background: var(--dark-bg-color); }
+.default-primary-color { background: var(--default-bg-color); }
+.light-primary-color   { background: var(--light-bg-color); }
+.text-primary-color    { color: var(--text-primary-color); }
+.accent-color          { background: var(--accent-bg-color); }
+.primary-text-color    { color: var(--primary-text-color); }
+.secondary-text-color  { color: var(--secondary-text-color); }
+.divider-color         { border-color: var(--divider-color); }
