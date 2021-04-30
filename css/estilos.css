@@ -1,16 +1,29 @@
+/* Este fichero CSS contiene los estilos para los selectores de 
+   la web, a excepción de los menús que están en un fichero
+   separado.
+ */
+
+/* 
+    Importamos el esquema de colores de la página web 
+ */
 @import "colores.css";
 
+/*
+	Selector para el contenedor de las páginas web
+ */
 .contenedor {
-	/* border: 1px solid #008080; */
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
+	/* Color de fondo */
 	background-color: var(--light-bg-color);
 	padding: 5px;
 }
 
+/*
+	Selector para la cabecera
+ */
 .main-header {
-	/* border: 1px solid #008080; */
 	height: 220px;
 	background-color: var(--dark-bg-color);
 	/* Color de texto */
@@ -22,27 +35,26 @@
 }
 
 section {
-	/* border: 1px solid #008080; */
 	width: 550px;
 	float: left;
-	/* height: 500px; */
 	min-height: 500px;
 	margin-left: 15px;
 	margin-bottom: 15px;
 }
 
-aside, .asidelong {
-	/* border: 1px solid #008080; */
+/*
+	Selector para las zonas laterales de la web
+ */
+aside,
+.asidelong {
 	margin-right: 15px;
 	margin-left: 15px;
 	width: 300px;
 	float: right;
-	/* height: 500px; */
 	min-height: 500px;
 	margin-bottom: 15px;
-
+	/* color para la barra lateral */
 	border-left: thick solid var(--divider-color);
-	/* text-indent: 10px; */
 	z-index: -1;
 }
 
@@ -58,10 +70,12 @@ aside, .asidelong {
 	color: var(--text-primary-color);
 }
 
+/*
+	Selector para los textos lorem ipsum
+ */
 .lipsum {
 	color: var(--secondary-text-color);
 	text-align: justify;
-	/* margin-right: 20px; */
 }
 
 .txtminus {
@@ -74,64 +88,49 @@ aside, .asidelong {
 	margin-bottom: 5px;
 }
 
-.menu {
-	width: 100%;
-	height: 50px;
-	border: none;
-	z-index: 1;
-	overflow: hidden;
-}
-
-.seccion {
-	/* width: 100%; */
+/*
+	Selector para parrafos en pantalla completa
+	(sin "aside")
+ */
+.parrafo {
 	height: fit-content;
 	float: inline-start;
 	margin-left: 15px;
 	margin-right: 15px;
-	/* margin-inline-end: 15px; */
-	/* padding-right: 15px; */
 	margin-bottom: 15px;
 	margin-top: 5px;
 }
 
 .centrado {
 	display: block;
-	/* display: inline-block; */
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
 }
 
+/*
+	Selector para insertar "Google Maps"
+ */
 .mapa {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
 }
 
+/*
+	Selector para agrupar imagen y texto
+ */
 .unidos {
 	display: inline-block;
 	margin-top: 5px;
 	margin-bottom: 10px;
-	/* margin: 5px 0px 10px 0px; */
 }
 
-/* .derecha {
-	float: right;
-	width: 45%;
-	position: relative;
-	margin-top: 0px;
-	margin-left: 10px;
-}
-
+/* 
+	Selector para colocar imagen y texto juntos
+ */
+.derecha,
 .izquierda {
-	float: left;
-	width: 45%;
-	position: relative;
-	margin-top: 0px;
-	margin-left: 10px;
-} */
-
-.derecha, .izquierda {
 	width: 45%;
 	position: relative;
 	margin-top: 0px;
@@ -152,6 +151,9 @@ aside, .asidelong {
 	top: 30px;
 }
 
+/*
+	Selector para dar un margen a los textos
+ */
 .margen {
 	margin-left: 10px;
 }
@@ -161,8 +163,6 @@ aside, .asidelong {
 	width: 50%;
 	position: absolute;
 	right: 105px;
-	/* margin-top: 0px;
-	margin-left: 10px; */
 }
 
 hr {
