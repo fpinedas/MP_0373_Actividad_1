@@ -91,3 +91,14 @@ ol {
     position: absolute;
     z-index: 2;
 }
+
+/*
+    Este selector desactiva aquellas opciones que deseemos.
+    Por ejemplo, aquellas que todavía no se han implementado.
+ */
+.desactivado {
+    /* Este atributo hace que no se pueda hacer "click" */
+    pointer-events: none;
+    /* Este atributo oscurece el botón para mostrarlo como desactivado */
+    opacity: 0.6;
+}
