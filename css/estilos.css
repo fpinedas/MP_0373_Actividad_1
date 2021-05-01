@@ -55,7 +55,7 @@ aside,
 	margin-bottom: 15px;
 	/* color para la barra lateral */
 	border-left: thick solid var(--divider-color);
-	z-index: -1;
+	/* z-index: -1; */
 }
 
 .asidelong {
@@ -262,6 +262,7 @@ hr {
 	.asidelong {
 		width: auto;
 		float: none;
+		display: table;
 		border-left: none;
 	}
 
@@ -271,7 +272,8 @@ hr {
 
 	.mapa {
 		width: auto; 
-		height: auto;
+		height: available;
+		display: table;
 	}
 
 	.res768x1024 {
@@ -295,6 +297,7 @@ hr {
 	.asidelong {
 		width: auto;
 		float: none;
+		display: table;
 		border-left: none;
 	}
 
@@ -304,7 +307,8 @@ hr {
 
 	.mapa {
 		width: auto; 
-		height: auto;
+		height: available;
+		display: table;
 	}
 
 	.res900	{
